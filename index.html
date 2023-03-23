@@ -4,9 +4,23 @@
     <title>3/21 Maquetado: 25js</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="contenedor">
+    <h1>Titulo de contenedor</h1>
+    <br/>
+    <p>Contenido del <span>contenedor</span></p>
+    <br/>
+    <a href="www.google.com">Link to google</a>
+    <p>Parrafo Original</p>
+    <p>Parrafo Hermano</p>
+    <p>Parafo Primo</p>
+    <p>Parrafo Primo 2</p>
+</div>
 
+
+    <div class="ejemplo-primera-clase">
     <!--Esto es un comentario-->
 
     <div style="background-color: red;">Contenido 1</div>
@@ -19,11 +33,11 @@
 
     <br/>
 
-    <h1 id="IdUnico">Título 1</h1>
-    <h2 id="IdUnico">Título 2</h2>
-    <h3 class="Clase1">Título 3</h3>
-    <h4 class="Clase1">Título 4</h4>
-    <h5 class="Clase1">Título 5</h5>
+    <h1 id="t1">Título 1</h1>
+    <h2 class="t2">Título 2</h2>
+    <h3 jorge="t3">Título 3</h3>
+    <h4>Título 4</h4>
+    <h5 class="Clase1" atributo="'nada">Título 5</h5>
     <h6>Título 6</h6>
 
     <br/>
@@ -35,16 +49,20 @@
     <br/>
 
     <p>Lista sin orden:</p>
-    <ul>
+    <ul style=display:inline-block;>
         <li>Item 1</li>
+        <div style=text-align:center;>
         <li>Item 2</li>
+        </div>
         <li>Item 3</li>
     </ul>
 
     <p>Lista con orden:</p>
-    <ol>
+    <ol style=text-align:center;>
         <li>Item 1</li>
-        <li>Item 2</li>
+        <div style=text-align:center;>
+            <li>Item 2</li>
+        </div>
         <li>Item 3</li>
     </ol>
 
@@ -89,5 +107,18 @@
     allowfullscreen="" 
     loading="lazy" 
     referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div>
+    <div class="padre">
+        <p>Parrafo cualquiera padre</p>
+        <div class="hijo">
+            <p esteNo>Parrafo cualquiera hijo</p>
+            <div class="nieto">
+                <p>Parrafo cualquiera nieto</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

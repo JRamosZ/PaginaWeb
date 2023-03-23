@@ -1,0 +1,63 @@
+/* 
+Elementos
+- ul --> Lista no ordenada
+- ol --> Lista ordenada
+- p --> Parrafo
+
+*/
+
+
+/* Seleccion por id */
+#t1 {
+    color: cyan;
+}
+
+/* Seleccion por clase */
+.t2 {
+    color: red;
+}
+
+/* Seleccion por atributo */
+[jorge] {
+    color: brown;
+}
+
+/* Seleccion por tag */
+
+h5 {
+    color: violet;
+}
+
+/* Seleccion local */
+.ejemplo-primera-clase #t1 {
+    color: yellow;
+}
+
+.contenedor h1 {
+    color: rebeccapurple;
+}
+
+.contenedor p span {
+    color: pink;
+}
+
+/* Seleccion global */
+* {
+    /* border: solid 4px blue; */
+}
+
+.padre p:not([esteNo]){
+    color: red;
+}
+
+
+.nieto {
+    background: rgb(0, 255, 162);
+    color: blue;
+    transition: background 4s ease, color 2s ease;
+}
+
+.nieto:hover {
+    background: pink;
+    color: yellow;
+}
